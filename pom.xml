@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>legacy_code_java</groupId>
+  <artifactId>legacy_code_java</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	  <!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.13.2</version>
+	    <scope>test</scope>
+	</dependency>
+	<dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongo-java-driver</artifactId>
+        <version>3.12.11</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.paypal.sdk/paypal-core -->
+	<dependency>
+	    <groupId>com.paypal.sdk</groupId>
+	    <artifactId>paypal-core</artifactId>
+	    <version>1.7.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-storage -->
+	<dependency>
+	    <groupId>com.microsoft.azure</groupId>
+	    <artifactId>azure-storage</artifactId>
+	    <version>8.6.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+	<dependency>
+	    <groupId>org.hamcrest</groupId>
+	    <artifactId>hamcrest</artifactId>
+	    <version>2.2</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpclient</artifactId>
+	    <version>4.5.13</version>
+	</dependency>
+
+  </dependencies>
+</project>
