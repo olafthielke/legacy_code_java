@@ -1,10 +1,6 @@
 package source.refactor.changeLongComplicatedMethod;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
-
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,10 +14,7 @@ public class InvoiceService {
 
     public InvoiceService() throws IOException {
     	
-    	Properties properties = new Properties();
-        InputStream input = new FileInputStream("config.properties");
-        properties.load(input);
-        this.connectionString = properties.getProperty("Database");
+        this.connectionString = AppSettings.getConnectionString();
     }
 
     public DbInvoice addInvoiceLine(String id, InvoiceLineCommand line) throws Exception {

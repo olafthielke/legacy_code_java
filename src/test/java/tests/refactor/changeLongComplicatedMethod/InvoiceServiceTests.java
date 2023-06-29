@@ -9,12 +9,21 @@ import static org.junit.Assert.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-import source.refactor.changeLongComplicatedMethod.DbInvoiceLine;
-import source.refactor.changeLongComplicatedMethod.InvoiceService;
-import source.refactor.changeLongComplicatedMethod.SqlProduct;
+import source.refactor.changeLongComplicatedMethod.*;
+
 
 public class InvoiceServiceTests {
 
+	@Test
+	public void bring_Class_Under_Test() throws Exception {
+		
+		new InvoiceService();
+	}
+	
+	
+	
+	
+	// other tests (set up DbInvoiceLine & SqlProduct collection)
 	@Test
 	public void test_calcSubtotal_for_no_products() {
 		
