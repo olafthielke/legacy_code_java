@@ -21,6 +21,8 @@ public class TransactionManager {
 
     public BankTransaction create(BankTransaction transaction) throws Exception {
     	
+    	// More tough dependencies to be broken...
+    	
         validate(transaction);
 
         transaction.setTransactionDate(LocalDate.now());
